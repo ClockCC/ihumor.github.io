@@ -1,0 +1,485 @@
+body{background: rgba(17,142,8,.1);overflow-x: hidden;}
+/*--container--*/
+.ont{
+    position: absolute;
+    bottom:-10%;
+    width:100%;
+    text-align:center;
+}
+.ont a{
+    width: 70%;
+    line-height: 230%;
+    font-size: 16px;
+    color: #61803f;
+    outline:none;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.4);
+    border-radius: 8px;
+}
+.icon{
+    width:125px;
+    height:120px;
+    position: absolute;
+    vertical-align: middle;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+.icon .frog{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+}
+.icon .frog .body{
+    width:110px;
+    height:86px;
+    background-color:#A3D768;
+    border-radius: 50%;
+    position: absolute;
+    top:25px;
+    left:0;
+    right:0;
+    margin:auto;
+    box-shadow: 4px 4px 0 0 rgba(163,215,104,0.3);
+}
+.icon .frog .body .mouth{
+    margin:auto;
+}
+.icon .frog .body .big-mouth{
+    width:30px;
+    height:20px;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 2px 2px 0 0 rgba(63,106,52,0.3);
+}
+.icon .frog .body .blush{
+    width:75px;
+    height:9px;
+    position: absolute;
+    top:20px;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.icon .frog .body .blush:before, .icon .frog .body .blush:after{
+    content:"";
+    display:block;
+    width:12px;
+    height:100%;
+    background:#F7D2C9;
+    border-radius: 50%;
+}
+.icon .frog .body .blush:before{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.icon .frog .body .blush:after{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.icon .frog .eyes{
+    width:86px;
+    height:35px;
+    position:absolute;
+    top:8px;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.icon .frog .eyes .eye{
+    width:35px;
+    height:35px;
+}
+.icon .frog .eyes .eye:before{
+    content:"";
+    display: block;
+    width:100%;
+    height:100%;
+    background:#A3D768;
+    border-radius: 50%;
+}
+.icon .frog .eyes .eye.wink .eye-inner{
+    background:transparent;
+    width:17px;
+    heiht:3px;
+    background:#3F6A34;
+    border-radius: 0;
+    position:absolute;
+    top:15px;
+    left:0;
+    right:0;
+    margin:auto;
+    -webkit-transform: rotate(21deg);
+    transform: rotate(21deg);
+}
+.icon .frog .eyes .eye.wink .eye-inner:before, .icon .frog .eyes .eye.wink .eye-inner:after{
+    content:'';
+    display:block;
+    width:17px;
+    height:3px;
+    background:#3F6A34;
+}
+.icon .frog .eyes .eye.wink .eye-inner:before{
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    position:absolute;
+    top:-4px;
+    left:0;
+}
+.icon .frog .eyes .eye.wink .eye-inner:after{
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    position:absolute;
+    top:4px;
+    left:0;
+}
+.icon .frog .eyes .eye.wink .pupil{
+    display:none;
+}
+.icon .frog .eyes .eye.extra-light .light{
+    width:40%;
+    height:40%;
+}
+.icon .frog .eyes .eye.extra-light .light:before{
+    content:"";
+    display:block;
+    width:70%;
+    height:70%;
+    background:#FFFFFF;
+    border-radius: 50%;
+}
+.icon .frog .eyes .eye .eye-inner{
+    background:#FFFFFF;
+    width:80%;
+    height:80%;
+    position:absolute;
+    top:10%;
+    left:10%;
+    border-radius: 50%;
+}
+.icon .frog .eyes .eye .eye-inner .pupil{
+    background:#3F6A34;
+    width:60%;
+    height:60%;
+    position:absolute;
+    top:20%;
+    left:20%;
+    border-radius: 50%;
+}
+.icon .frog .eyes .eye .eye-inner .pupil .light{
+    background:#FFF;
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:10%;
+    left:10%;
+    border-radius: 50%;
+}
+.icon .frog .eyes .eye-left{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.icon .frog .eyes .eye-right{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+@-webkit-keyframes eyes-1 {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    70% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes eyes-1 {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    70% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes eyes-2 {
+    0% {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    28% {
+        opacity: 1;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    70% {
+        opacity: 1;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    78% {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+}
+@keyframes eyes-2 {
+    0% {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    28% {
+        opacity: 1;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    70% {
+        opacity: 1;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    78% {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+}
+@-webkit-keyframes blush {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+@keyframes blush {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+.frog#frog-5 .eye:after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 60%;
+    border-top: 3px solid #3F6A34;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    opacity: 0;
+    -webkit-animation: eyes-2 2.8s linear 0s infinite;
+    animation: eyes-2 2.8s linear 0s infinite;
+}
+.frog#frog-5 .eye .eye-inner {
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation: eyes-1 2.8s linear 0s infinite;
+    animation: eyes-1 2.8s linear 0s infinite;
+}
+.frog#frog-5 .blush {
+    opacity: 0;
+    -webkit-animation: blush 2.8s linear 0s infinite;
+    animation: blush 2.8s linear 0s infinite;
+}
+.frog#frog-5 .mouth {
+    width: 26px;
+    height: 26px;
+    border-bottom: 10px solid #fff;
+    border-radius: 20px;
+}
+
+@-webkit-keyframes eyes-big-light {
+    0% {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: auto;
+        bottom: auto;
+    }
+    20% {
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: 10%;
+        bottom: 10%;
+    }
+    70% {
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: 10%;
+        bottom: 10%;
+    }
+    80% {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icon .frog .body{
+        width:100px;
+        height:76px;
+    }
+    .icon .frog .eyes{
+        width:85px;
+    }
+    .ont{
+        bottom:0;
+    }
+}
+
+/*--2--*/
+@-webkit-keyframes smile {
+    0% {
+        border-radius: 0%;
+    }
+    20% {
+        border-radius: 50%;
+    }
+    70% {
+        border-radius: 50%;
+    }
+}
+@keyframes smile {
+    0% {
+        border-radius: 0%;
+    }
+    20% {
+        border-radius: 50%;
+    }
+    70% {
+        border-radius: 50%;
+    }
+}
+.frog#frog-2 .mouth {
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+.frog#frog-2 .eye-inner {
+    top: 17%;
+    background-color: transparent !important;
+    -webkit-animation: hearts 0.6s linear 0s infinite alternate;
+    animation: hearts 0.6s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes hearts {
+    0% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes hearts {
+    0% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.frog#frog-2 .eye-inner:before, .frog#frog-2 .eye-inner:after {
+    content: "";
+    display: block;
+    height: 70%;
+    width: 40%;
+    background-color: #C71F1C;
+    border-radius: 50% 50% 0 0;
+}
+.frog#frog-2 .eye-inner:before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.frog#frog-2 .eye-inner:after {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.frog#frog-2 .eye-inner .pupil {
+    display: none;
+}
+
+/*--error--*/
+.three-color{width: 1rem;position: absolute;bottom:0;right:0;}
+div{width: 1rem;height: 1rem;}
+.red{background: #9c4650;}
+.green{background:#598844;}
+.blue{background:#368980;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" >
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>宝批龙 ❤</title>
+    <link rel="shortcut icon" type="image/png" href="img/ion.png">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="js/error.js"></script>
+</head>
+<body>
+<!--icon #2-->
+<div class="icon">
+    <div class="frog" id="frog-2">
+
+        <div class="body">
+            <div class="blush"></div>
+            <div class="mouth big-mouth"></div>
+        </div>
+
+        <div class="eyes">
+            <div class="eye eye-left">
+                <div class="eye-inner">
+                    <div class="pupil">
+                        <div class="light"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eye eye-right">
+                <div class="eye-inner">
+                    <div class="pupil">
+                        <div class="light"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="ont">
+        <a href="enjoy.html">喜欢吗 ?</a>
+    </div>
+</div>
+<!--ENd-icon-->
+<!--container-->
+    <section class="three-color">
+        <article>
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+        </article>
+    </section>
+</body>
+<script>
+    var blueAnimation = anime({
+        targets: '.blue',
+        translateX: -100,//长度
+        direction: 'alternate',
+        autoplay: false
+    });
+    var redAnimation = anime({
+        targets: '.red',
+        translateX: -100,
+        direction: 'alternate',
+        autoplay: false
+    });
+    var greenAnimation = anime({
+        targets: '.green',
+        translateX: -100,
+        direction: 'alternate',
+        autoplay: false
+    });
+    blueAnimation.settings.complete = function () {
+        greenAnimation.restart();
+    }
+    redAnimation.settings.complete = function () {
+        blueAnimation.restart();
+    }
+    greenAnimation.settings.complete = function () {
+        redAnimation.restart();
+    }
+    greenAnimation.play();
+</script>
+</html>
